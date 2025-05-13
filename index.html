@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor de personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(0, 0, 0); display: flex; ">
+   
+   <div class="alinhamento"> 
+    <h2>Traduzir seu texto para a linguagem:</h2>
+
+    <select id="personagem" onchange="mudarFundo()">
+        <option value="">Selecione seu personagem:</option>
+        <option value="yoda">Yoda - Star Wars</option>
+        <option value="shakespeare">Shakespeare</option>
+        <option value="minion">Minions</option>
+        <option value="mandalorian">Mandalorian - Star Wars</option>
+        <option value="groot">Groot - Guardians of the Galaxy</option>
+    </select> 
+    
+    <br></br>
+    <textarea name="" id="textoOriginal" rows="4" cols="50" placeholder="Digite sua fala aqui ! (Somente textos em inglês funcionaram corretamente, agradeço a compreensão ! )"></textarea>
+    <br></br>
+
+    <button class="btnTraduzir" onclick="traduzir()">Traduzir</button>
+
+    <h3 style="color: white;">Tradução:</h3>
+    <p id="resultado"></p>
+   </div>
+  
+   <script src="script.js"></script>
+
+</body>
+</html>
